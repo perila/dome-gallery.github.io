@@ -179,7 +179,7 @@ p {
   top: 34px;
   right: 56px;
   height: 90vh;
-  width: 36vw;
+  width: 77vw;
   padding: 15px;
 }
 
@@ -195,5 +195,6 @@ p {
 @media only screen and (min-width: 900px) {
   #info-wrapper {
     padding: 55px;
+    width: 36vw;
   }
 }
