@@ -19,4 +19,22 @@ document.addEventListener('DOMContentLoaded', function(event) {
     selectedIndex--;
     rotateRoom();
   });
+
+  var infoButton = document.getElementById('info-link');
+  var infoWrapper = document.getElementById('info-wrapper');
+  var body = document.getElementById('window');
+  infoButton.addEventListener( 'click', function() {
+    if (infoWrapper.classList.contains("hidden")) {
+      infoWrapper.classList.remove("hidden");
+    } else {
+      infoWrapper.classList.add("hidden");
+    }
+  });
+  body.addEventListener( 'click', function() {
+    if (infoWrapper.classList.contains("hidden")) {
+      return false;
+    } else {
+      infoWrapper.classList.add("hidden");
+    }
+  });
 });
