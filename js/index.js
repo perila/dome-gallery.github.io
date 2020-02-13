@@ -37,4 +37,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
       infoWrapper.classList.add("hidden");
     }
   });
+
+  var zoom = document.getElementsByClassName("wall");
+  var i;
+
+  for (i = 0; i < zoom.length; i++) {
+    zoom[i].addEventListener("click", function() {
+      if (body.classList.contains("zoomed")) {
+        body.classList.remove("zoomed");
+      } else {
+        body.classList.add("zoomed");
+      }
+    });
+  }
 });
